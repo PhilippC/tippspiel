@@ -1,0 +1,24 @@
+body
+{
+  background-color: #fff;
+  margin-top:0px;
+  margin-left:0px;
+}
+td.PageContentMain
+{
+  border: 1px solid #000;
+  padding: 8px;
+}
+td.PageFoot
+{
+  background-image:none;
+   height: 9px;
+  text-align:right;
+  vertical-align: middle;
+}
+td.PageHeader
+{ 
+background-image:none;
+  height: 14px;
+  vertical-align: middle;
+}

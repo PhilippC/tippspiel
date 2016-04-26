@@ -1,0 +1,201 @@
+body
+{
+  background-color: #fff;
+  margin-top:0px;
+  margin-left:1px;
+  margin-right:1px;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+a:link    { color: #000000; font-weight: normal;}
+a:visited { color: #000000; font-weight: normal;}
+a:active  { color: #000000; font-weight: normal;}
+a:hover   { color: #000000; font-weight: normal;}
+
+h1 {
+  font-size:10pt;
+  color: #555555;
+}
+
+h2 {
+  font-size:10pt;
+  color: #777777;
+}
+
+th
+{
+color: #000000;
+background-color: #C7D7EE;
+}
+tr.OddRow
+{
+  background-color:#eeeeee;
+}
+tr.EvenRow
+{
+  background-color:#f8f8f8;
+}
+
+td.Menu
+{
+  background-color:#FFCC33;
+  text-align:center;
+  height:20px;
+}
+td.MenuHover
+{
+  background-color:#FFEC83;
+  text-align:center;
+}
+
+td.SubMenu
+{
+  background-color:#FFEC83;
+  text-align:center;
+}
+td.SubMenuHover
+{
+  background-color:#FFCC33;
+  text-align:center;
+}
+
+td.SubMenuPreTD
+{
+  text-align:center;
+  text-decoration: none; font-weight: bold;
+
+}
+
+td.Menu a:link {font-size:8pt; text-decoration: none; font-weight: bold;}
+td.Menu a:visited {font-size:8pt; text-decoration: none; font-weight: bold;}
+td.Menu a:active {font-size:8pt; text-decoration: none; font-weight: bold;}
+td.Menu a:hover {font-size:8pt; text-decoration: none; font-weight: bold;}
+td.MenuHover a:link {font-size:8pt; text-decoration: none; font-weight: bold;}
+td.MenuHover a:visited {font-size:8pt; text-decoration: none; font-weight: bold;}
+td.MenuHover a:active {font-size:8pt; text-decoration: none; font-weight: bold;}
+td.MenuHover a:hover {font-size:8pt; text-decoration: none; font-weight: bold;}
+td.SubMenu a:link {font-size:8pt; text-decoration: none; font-weight: bold;}
+td.SubMenu a:visited {font-size:8pt; text-decoration: none; font-weight: bold;}
+td.SubMenu a:active {font-size:8pt; text-decoration: none; font-weight: bold;}
+td.SubMenu a:hover {font-size:8pt; text-decoration: none; font-weight: bold;}
+td.SubMenuHover a:link {font-size:8pt; text-decoration: none; font-weight: bold;}
+td.SubMenuHover a:visited {font-size:8pt; text-decoration: none; font-weight: bold;}
+td.SubMenuHover a:active {font-size:8pt; text-decoration: none; font-weight: bold;}
+td.SubMenuHover a:hover {font-size:8pt; text-decoration: none; font-weight: bold;}
+
+.Meldung {
+  font-weight: bold;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.FehlerMeldung {
+  margin-top: 12px;
+  font-weight: bold;
+  color:#dd4444;
+}
+
+.FehlerMeldungText {
+  font-style: italic;
+  color:#dd4444;
+  margin-bottom: 12px;
+}
+
+.BoxTitle {
+  font-weight: bold;
+}
+.BoxInfoType {
+  font-weight: bold;
+  color: #555555;
+}
+.BoxInfo {
+  color: #555555;
+}
+
+.BoxContent
+{
+  text-align:left;
+}
+
+.Box {
+   border: 1px solid;
+   border-color: #FFCC33;
+   background-color: #E8E8E8;
+   padding: 4px;
+}
+
+.RulesBox
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.MessageBox
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.TeamInfoBox {
+   border: 1px solid;
+   border-color: #C7D7EE;
+   background-color: #E8E8E8;
+   padding: 4px;
+
+}
+
+.smallFormElement
+{
+
+}
+
+.smallSubmitButton
+{
+
+}
+
+.wideFormElement
+{
+}
+
+.wideSubmitButton
+{
+}
+
+#FootNote
+{
+  font-size: small;
+  color:#888888;
+}
+
+#AktPlatz
+{
+  font-size: large;
+}
+
+.tooltip {
+	position: absolute;
+	display: none;
+
+   border: 2px solid;
+   border-color: #C7D7EE;
+   background-color: #FFFFFF;
+   padding: 4px;
+   width:100%;
+}
+
+td.PageFoot
+{
+  text-align:right;
+  vertical-align: middle;
+}
+td.PageHeader
+{ 
+  vertical-align: middle;
+}
+
+
+table.SmallTippTable
+{
+
+}
