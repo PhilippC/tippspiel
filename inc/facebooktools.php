@@ -9,7 +9,7 @@
 
 
 try{ 
-require_once($_SERVER["DOCUMENT_ROOT"].'/inc/facebook_sdk/src/facebook.php');
+require_once($_SERVER["DOCUMENT_ROOT"].'/inc/facebook-php-sdk/facebook.php');
 } catch (Exception $e)
 {
 	if ($fb_debug)
@@ -54,20 +54,23 @@ session_start();
 
 function isFacebookApp()
 {
-	return $_SESSION["fbapp"] == true;
+	if ($_SESSION["fbapp"])
+		return true;
+	
+	$fbdata = (unserialize(base64_decode($_SESSION["fbdata"])));
+	if (!empty($fbdata))
+	{
+		return true;
+	}
+	else 
+	{
+		return false;
+	}
+		
 }
 
 function tryGetLoggedInFacebookUser($forceUpdate=false)
 {
-	if (!$forceUpdate)
-	{
-		$fbdata = $_SESSION["fbdata"];
-		if (!empty($fbdata))
-		{
-			$u = unserialize(base64_decode($fbdata));
-			return $u;
-		}
-	}
 
 	global $facebook;
 	if (empty($facebook))
@@ -76,7 +79,15 @@ function tryGetLoggedInFacebookUser($forceUpdate=false)
 	}
 	try 
 	{
-		$me = $facebook->api('/me');
+		$uid = $facebook->getUser();
+		
+		if ($uid){
+			 $me =$facebook->api('/me');
+		} else 
+		{
+			return;
+		}
+		
 	} 
 	catch (FacebookApiException $e) 
 	{
